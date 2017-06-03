@@ -1743,20 +1743,31 @@
 						outline: 0;
 					}
 
-		@media screen and (max-width: 736px) {
-
-			#header {
-				height: 2.5em;
-				line-height: 2.5em;
+		@media screen and (max-width: 511px) {
+			body{
+				padding-top:none;
 			}
-
+			#contact .content header{
+				text-align:left;
+			}
+			#header {
+				display:none;
+			}
+			#one,#two{
+				background:none!important;
+				padding:0;
+			}
+			header h2{
+				text-align: left;
+			}
+			#work{
+				padding-top:0;
+			}
+			#one p,#two p{
+				text-align:left;
+			}
 				#header h1 {
-					text-align: center;
-					position: relative;
-					left: 0;
-					top: 0;
-					height: 2.5em;
-					line-height: 2.5em;
+
 				}
 
 					#header h1 a {
@@ -1764,20 +1775,13 @@
 					}
 
 				#header nav {
-					display: none;
 				}
 
 		}
 
-	body {
-		padding-top: 3em;
-	}
 
 		@media screen and (max-width: 736px) {
 
-			body {
-				padding-top: 2.5em;
-			}
 
 		}
 
@@ -1803,7 +1807,7 @@
 			}
 
 		.main.fullscreen {
-			min-height: 100%;
+			min-height:100vh;
 		}
 
 		.main.style1 {
@@ -1969,45 +1973,9 @@
 
 		@media screen and (max-width: 736px) {
 
-			.main.fullscreen {
-				height: auto !important;
-			}
-
-			.main.style1 {
-				padding: 4em 15px 4em 15px;
-			}
-
-				.main.style1 h2 {
-					font-size: 3em;
-				}
-
-			.main.style2 {
-				padding: 6em 15px 6em 15px;
-			}
-
-				.main.style2:before, .main.style2:after {
-					display: none !important;
-				}
-
-				.main.style2 .button.anchored {
-					display: none;
-				}
-
-				.main.style2 .content {
-					width: 100%;
-					max-width: 100%;
-					text-align: center;
-					-moz-transform: none;
-					-webkit-transform: none;
-					-ms-transform: none;
-					transform: none;
-				}
-
-			.main.style3 {
-				text-align: center;
-				padding: 3em 10px 3em 10px;
-			}
-
+			.main.style2 .content {
+   				width: 100%;
+			}	
 		}
 
 		@media screen and (max-width: 480px) {
