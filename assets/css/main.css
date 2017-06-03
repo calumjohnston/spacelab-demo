@@ -71,7 +71,12 @@
 		height: 100%;
 		min-width: 320px;
 	}
-
+	#work header{
+		    text-align: left;
+	}
+	.image.fit{
+		padding:15px 15px 15px 0px;
+	}
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
@@ -1746,6 +1751,9 @@
 		@media screen and (max-width: 511px) {
 			body{
 				padding-top:none;
+			}
+			.image.fit{
+				padding:15px 0px;
 			}
 			#contact .content header{
 				text-align:left;
